@@ -1,17 +1,13 @@
-package com.aloha.spring_test.mapper;
+package com.aloha.spring_test.service;
 
 import java.util.List;
-
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import com.aloha.spring_test.domain.Board;
 import com.aloha.spring_test.domain.Page;
 
-@Mapper
-public interface BoardMapper {
+public interface BoardService {
 
-    public List<Board> list(@Param("page") Page page) throws Exception;
+    public List<Board> list(Page page) throws Exception;
 
     public Board select(int no) throws Exception;
 
@@ -21,5 +17,5 @@ public interface BoardMapper {
     
     public int delete(int no) throws Exception;
     
-    public int count() throws Exception; 
+    public int count() throws Exception;
 }
