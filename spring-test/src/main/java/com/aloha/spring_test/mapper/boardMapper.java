@@ -1,5 +1,5 @@
 package com.aloha.spring_test.mapper;
 
-public class boardMapper {
+public class BoardMapper {
     
 }

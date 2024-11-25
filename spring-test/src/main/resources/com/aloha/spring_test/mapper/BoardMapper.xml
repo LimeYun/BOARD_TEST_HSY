@@ -3,6 +3,13 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace="매퍼 인터페이스 경로" -->
-<mapper namespace="com.aloha.spring_test.mapper.boardMapper">
-        
+<mapper namespace="com.aloha.spring_test.mapper.BoardMapper">
+
+    <select id="list" resultType=>
+        select *
+        from board
+    </select>
+
+
 </mapper>
+
